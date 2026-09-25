@@ -1,13 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+
+    <title>SEED MATCH</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li class="name"><a href="#home">SEED MATCH</a></li>
+          <li id="home-nav"><a href="#home">Home</a></li>
+          <li id="match-nav"><a href="#match">Match</a></li>
+          <li id="results-nav"><a href="#results">Results</a></li>
+          <li id="explore-nav"><a href="#explore">Explore</a></li>
+          <li id="about-nav"><a href="#about">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="home" id="home">
+      <h1>Find Your Place in <span>Sustainability.</span></h1>
+      <h5>
+        SEED Match connects UIUC students with sustainability opportunities
+        based on what they <br />
+        care about and how they want to get involved.
+      </h5>
+    </div>
+    <div class="page-section" id="match">
+      <div class="match">
+        <h1>Match</h1>
+        <p>Tell us what you care about. We’ll show you what to do next.</p>
+
+        <div class="match-options">
+          <div class="question-group">
+            <i class="fa-solid fa-leaf fa-lg"></i>
+
+            <div class="question-text">
+              <h4>What are you interested in?</h4>
+              <p>Choose a sustainability topic that interests you.</p>
+            </div>
+            <select class="interest-option">
+              <option>Water</option>
+              <option>Energy</option>
+              <option>Green Infrastructure</option>
+              <option>Climate</option>
+            </select>
+          </div>
+
+          <div class="question-group">
+            <i class="fa fa-calendar fa-lg"></i>
+            <div class="question-text">
+              <h4>What are you looking for?</h4>
+              <p>Choose how you want to get involved.</p>
+            </div>
+
+            <select class="type-option">
+              <option>Research</option>
+              <option>Volunteer</option>
+              <option>Event</option>
+            </select>
+          </div>
+
+          <div class="question-group">
+            <i class="fa fa-users fa-lg"></i>
+            <div class="question-text">
+              <h4>How much time do you have?</h4>
+              <p>Choose your preferred time commitment.</p>
+            </div>
+            <select class="time-option">
+              <option>One-time</option>
+              <option>A few hours</option>
+              <option>Weekly</option>
+            </select>
+          </div>
+        </div>
+
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div id="results">
+      <div class="results-header">
+        <h1>Your Matches</h1>
+        <p>
+          Opportunities picked for you. Based on your interests, goals, and
+          availability, these are the sustainability opportunities we think fit
+          you best. Find one you like and get involved.
+        </p>
+      </div>
+      <div class="results">
+        <div class="results-content">
+          <button class="previous" id="previous">←</button>
+          <div class="slides">
+            <div class="opportunity-card active-card">
+              <i class="fa fa-globe fa-lg"></i>
+              <h2>Campus Native Planting Day</h2>
+              <p>
+                Help plant native species and improve green space on campus. No
+                experience needed—just show up ready to get your hands dirty.
+              </p>
+              <hr />
+              <p>Time: Friday, October 9 · 2:00–4:00 PM</p>
+              <p>Location: South Quad</p>
+            </div>
+            <div class="opportunity-card">
+              <i class="fa fa-globe fa-lg"></i>
+              <h2>Zero Waste Volunteer Crew</h2>
+              <p>
+                Help students sort waste and compost correctly at a campus
+                event. A quick, one-time way to get involved in campus
+                sustainability.
+              </p>
+              <hr />
+              <p>Time: Saturday, October 17 · 11:00 AM–1:00 PM</p>
+              <p>Location: Main Quad</p>
+            </div>
+            <div class="opportunity-card">
+              <i class="fa fa-globe fa-lg"></i>
+              <h2>Green Spaces Mapping Project</h2>
+              <p>
+                Join a student team using GIS and site observations to identify
+                opportunities for better green spaces around campus. Great for
+                students interested in technical or project-based work.
+              </p>
+              <hr />
+              <p>Time: Wednesdays · 5:00–6:00 PM</p>
+              <p>Location: Campus Instructional Facility (CIF)</p>
+            </div>
+          </div>
+          <button class="next" id="next">→</button>
+          <button class="join-button">Join Opportunity</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section">
+      <div class="explore" id="explore">
+        <h1>Explore Sustainability</h1>
+        <p>Discover more ways to get involved on campus.</p>
+        <video class="video-section" controls>
+          <source src="./assets/video.mp4" type="video/mp4" />
+        </video>
+
+        <div class="explore-links">
+          <div>
+            <i class="fa-solid fa-leaf fa-lg"></i>
+            <h3>Organizations</h3>
+            <p>Find sustainability-focused student groups.</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-calendar fa-lg"></i>
+            <h3>Events</h3>
+            <p>Explore upcoming sustainability events.</p>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-globe fa-lg"></i>
+            <h3>Resources</h3>
+            <p>Learn more about sustainability at UIUC.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about" id="about">
+      <h1>About</h1>
+      <p>
+        Students for Environmental Engineering and Design (SEED) is a student
+        organization at UIUC focused on giving students hands-on experience with
+        sustainability and environmental engineering. Through technical
+        projects, professional connections, and campus involvement, SEED helps
+        students take what they learn in class and apply it to real
+        environmental challenges. One challenge we noticed is that there are
+        already a lot of sustainability opportunities across campus, but
+        students do not always know about them or know which ones fit their
+        interests. Events, volunteer needs, projects, and other opportunities
+        can get lost across newsletters, emails, calendars, and different
+        organizations. Apparently, finding something to do has itself become an
+        extracurricular activity.
+      </p>
+      <p>
+        SEED Match is a simple tool designed to make that connection easier.
+        Students tell us what they are interested in, what type of involvement
+        they are looking for, and how much time they have. SEED Match then
+        connects them with relevant sustainability opportunities and gives them
+        a direct way to get involved making it easier to go from “I want to
+        help” to actually showing up.
+      </p>
+      <div class="about-images">
+        <img src="./assets/about1.jpg" alt="Image 1" />
+        <img src="./assets/about2.jpg" alt="Image 2" />
+        <img src="./assets/about3.png" alt="Image 3" />
+      </div>
+    </div>
+    <footer class="background-section">
+      <h1>Want to Learn More About SEED?</h1>
+      <button class="footer-button">Contact Us</button>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/seeduiuc">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/company/students-for-environmental-engineering-and-design/"
+        >
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modeal -->
+    <div class="modal" id="opportunity-modal">
+      <div class="modal-content">
+        <h3 id="modal-title">TITLE</h3>
+        <p id="modal-info">More INFO</p>
+        <p id="modal-time">TIME</p>
+        <p id="modal-location">LOCATION</p>
+        <button id="close-modal">Close</button>
+      </div>
+    </div>
+  </body>
 </html>
